@@ -1,5 +1,4 @@
 Original list:
-
 [[1, 3, 3, 4], [2, 1, 3, 5], [4, 0, 1, 7], [5, 2, 1, 0], [0, 4, 8, 3]]
 
 Part 1: Sorted list by second element of internal lists:
