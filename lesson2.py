@@ -1,4 +1,4 @@
-# Part1
+# Task 1
 original = [[1, 3, 3, 4], [2, 1, 3, 5], [4, 0, 1, 7], [5, 2, 1, 0], [0, 4, 8, 3]]
 print('Original list:')
 print(original)
@@ -11,35 +11,35 @@ while bool(second_items):
     del original[min_item_index]  # removes item from its original position
     del second_items[min_item_index]  # removes item from second items list after transposition
 
-print('\nPart 1: Sorted list by second element of internal list:')
+print('\nPart 1: Sorted list by second element of internal lists:')
 print(original)
 
-# Part2
+# Task 2
 dictionary = {}
 for list_ in original:
     dictionary[list_[1]] = [list_[0]] + list_[2:]
     # dictionary[list_[1]] = [list_[i] for i in range(len(list_)) if i != 1]     # alternative version
 
-print('\nPart 2: Created dictionary based on sorted internal lists')
+print('\nPart 2: Created dictionary based on sorted internal lists:')
 print(dictionary)
 
-# Part3
+# Task 3
 for pair in dictionary.items():  # pass through dictionary pairs
     pair[1].sort(reverse=True)  # sorts lists (dictionary values) in descending order
     dictionary[pair[0]] = pair[1]  # overwrites the value in the dictionary
 
-print('\nPart 3: Sorted dictionary values (lists) in descending order')
+print('\nPart 3: Sorted dictionary values (lists) in descending order:')
 print(dictionary)
 
-# Part4
+# Task 4
 values_set = set()
 for list_ in dictionary.values():
     values_set = values_set.union(list_)  # unites all dictionary values to set
 
-print('\nPart 4: Created set based on all dictionary values')
+print('\nPart 4: Created set based on all dictionary values:')
 print(values_set)
 
-# Part5
+# Task 5
 string = str(values_set)
-print('\nPart 5: String based on set')
+print('\nPart 5: String based on set:')
 print(string)
