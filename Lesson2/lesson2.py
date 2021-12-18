@@ -43,3 +43,5 @@ print(values_set)
 string = str(values_set)
 print('\nTask 5: String based on set:')
 print(string)
+
+p
