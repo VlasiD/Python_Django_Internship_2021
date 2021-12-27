@@ -19,7 +19,7 @@ def create_table():
 
 
 def add_to_db(values):
-    """Adds given data to the database"""
+    """Adds received data to the database"""
     sql = """INSERT INTO city (country, city, cityID) VALUES (?, ?, ?)"""
 
     try:
