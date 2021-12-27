@@ -17,8 +17,8 @@ Output:\
 
 3. `delete_from_db()` method - deletes entries from the database.\
 For example, let's delete all russian cities from the database:\
-`cursor.execute("DELETE FROM city WHERE Country='Russian Federation'")`\
+`cursor.execute("DELETE FROM city WHERE Country='Russian Federation'")`
 
 4. `update_data()` method - updates data in the database.\
 For example, let's set new value for cityID:\
-`cursor.execute("UPDATE city set cityID=5000 WHERE id=50")`\
+`cursor.execute("UPDATE city set cityID=5000 WHERE id=50")`
